@@ -33,7 +33,7 @@ function modalChar(char) {
     document.getElementById("spybar").style.width = 0 + "%";
     modal.show()
     request.onload = function() {
-        if(!request.response || !request.response.ok) {
+        if(!request.response || !request.response.prepared) {
             $("#loading").hide()
             $("#err").show()
             $("#modalrow").hide()
