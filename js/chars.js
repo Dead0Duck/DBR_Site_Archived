@@ -41,7 +41,7 @@ function modalChar(char) {
             return
         }
 
-        const data = request.response.data;
+        const data = request.response;
         document.getElementById('modalchar_name').innerText = data.name
         if(data.real_name) {
             document.getElementById('modalchar_name').innerText += `(${data.real_name})`
