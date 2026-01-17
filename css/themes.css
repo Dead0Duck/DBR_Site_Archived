@@ -1,0 +1,15 @@
+[data-bg="1"] { 
+	--theme-color: #db0bde;
+	--theme-color-hover: #C109C4;
+	background-image: url('/images/dbr-main.webp');
+}
+[data-bg="2"] { 
+	--theme-color: #2aa9b5;
+	--theme-color-hover: #248F99;
+	background-image: url('/images/aqua.webp');
+}
+[data-bg="3"] { 
+	--theme-color: #f32222;
+	--theme-color-hover: #D81E1E;
+	background-image: url('/images/hope.webp');
+}

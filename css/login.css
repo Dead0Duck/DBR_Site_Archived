@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+@media (max-width: 858px) {
+	html {
+		font-size: 12px;
+	}
+}
+@media (max-width: 780px) {
+	html {
+		font-size: 11px;
+	}
+}
+@media (max-width: 724px) {
+	html {
+		font-size: 10px;
+	}
+}
+@media (max-width: 702px) {
+	html {
+		font-size: 9px;
+	}
+}
+@media (max-width: 623px) {
+	html {
+		font-size: 8px;
+	}
+}
+
+body { 
+	font-family: 'Comfortaa', cursive;
+	height: 100%;
+	color: white;
+	min-width: 400px;
+}
+
+body::before {
+	background-image: url("../images/bg_2.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	content: '';
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	will-change: transform;
+	z-index: -1;
+}
+
+.Duck {
+	color: rgba(255,0,255,1);
+	text-shadow: 0 0 4px rgb(0 0 0);
+	margin-right: 0px;
+}
+
+.card {
+	border-radius: 10px;
+	min-width: 300px;
+	max-width: 500px;
+}
+
+.log_btn {
+	background-color: #000;
+	border: none;
+	color: white;
+	padding: 10px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 10px;
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+}
+.log_btn:focus {
+	outline: none;
+}
+
+
+
+.log_btn#Discord {
+	background-color: #5865F2;
+}
+
+.log_btn#Discord:hover {
+	background-color: #4F5ED6;
+}
+
+.log_btn#Discord:active {
+	background-color: #4452BA;
+}
+
+.log_btn#Discord:disabled {
+	background-color: #4452BA;
+}
+
+
+
+.log_btn#VK {
+	background-color: #0077FF;
+}
+
+.log_btn#VK:hover {
+	background-color: #006BE5;
+}
+
+.log_btn#VK:active {
+	background-color: #0062CC;
+}
+
+.log_btn#VK:disabled {
+	background-color: #0062CC;
+}
+
+
+
+.log_btn#Steam {
+	background-color: #00AEEF;
+}
+
+.log_btn#Steam:hover {
+	background-color: #009BD3;
+}
+
+.log_btn#Steam:active {
+	background-color: #0089B7;
+}
+
+.log_btn#Steam:disabled {
+	background-color: #0089B7;
+}
+
+
+
+.log_btn#Duck {
+	color: #000;
+	background-color: #FF00FF;
+}
+
+.log_btn#Duck:hover {
+	background-color: #E500E5;
+}
+
+.log_btn#Duck:active {
+	background-color: #CC00CC;
+}
+
+.log_btn#Duck:disabled {
+	background-color: #CC00CC;
+}

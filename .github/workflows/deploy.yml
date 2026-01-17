@@ -1,0 +1,30 @@
+name: GitHub Pages Auto Deploy
+run-name: ${{ github.actor }} is deploying a new update
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  Deploy:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        if: github.ref == 'refs/heads/main'
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          external_repository: dead0duck/dead0duck.github.io
+          publish_dir: .
+          cname: dbr.dead0duck.ru

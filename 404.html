@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ошибка</title>
+	<meta content="Ошибка" property="og:title" />
+	<meta content="Возможно, Вам придётся войти, чтобы увидеть эту страницу." property="og:description" />
+	<meta content="Возможно, Вам придётся войти, чтобы увидеть эту страницу." name="description" />
+	
+	
+
+<meta content="Despair Beyond Repair" property="og:site_name" />
+<meta content="/android-icon-192x192.png?v=2" property="og:image" />
+<meta content="#8800ff" name="theme-color" />
+<link rel="stylesheet" href="/css/white.css">
+<link rel="stylesheet" href="/css/dark.css">
+<link rel="stylesheet" href="/css/themes.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
+<link rel="manifest" href="/site.webmanifest?v=2">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=2" color="#212121">
+<link rel="shortcut icon" href="/favicon.ico?v=2">
+<meta name="apple-mobile-web-app-title" content="Despair Beyond Repair">
+<meta name="application-name" content="Despair Beyond Repair">
+<meta name="msapplication-TileColor" content="#00ffff">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/bootstrap-icons/bootstrap-icons.css">
+
+<script src="/js/libs/bootstrap.js"></script>
+
+	<link rel="stylesheet" href="/css/animate.css" />
+</head>
+
+<body style="background-color:black;">
+	<div id="bg" class="bg-image"></div>
+	<div class="container p-3">
+		<div class="container text-light">
+			<div class="row position-absolute top-50 start-50 translate-middle align-items-center justify-content-center m-2">
+				<div class="col-sm-6 animate__animated animate__flipInY d-flex justify-content-center">
+					<img src="/images/oopsie.png" class="img-fluid"></img>
+				</div>
+				<div class="col animate__animated animate__fadeInRight" style="text-align:center">
+					<h1 class="display-1" style="margin-top: 20px;"><strong id="code">404</strong></h1>
+					<span id="desc">Упс! Похоже этой страницы не существует.<br>Давай вернемся на главную!</span>
+					<br><button onclick="location.href='/games'" id="ok" type="button" class="btn btn-light mt-3 btn-lg" onmouseenter="document.getElementById('bg').classList.add('ungray'); document.getElementById('bg').classList.remove('gray-back')" onmouseleave="document.getElementById('bg').classList.remove('ungray'); document.getElementById('bg').classList.add('gray-back')">Хорошо</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<style>
+		body {
+			position: relative;
+		}
+
+		body,
+		html {
+			height: 100%;
+			overflow-x: hidden;
+			overflow-y: hidden;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		.bg-image {
+			background-image: url("/images/dbr-main.webp");
+			filter: grayscale(100%) blur(50px);
+			-webkit-filter: grayscale(100%) blur(50px);
+			height: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.ungray {
+			animation-name: ungray;
+			animation-duration: 2s;
+			background-size: 200%;
+			filter: grayscale(0%) blur(50px);
+			-webkit-filter: grayscale(0%) blur(50px);
+		}
+
+		@keyframes ungray {
+			from {
+				filter: grayscale(100%) blur(50px);
+				-webkit-filter: grayscale(100%) blur(50px);
+				background-size: 100%;
+			}
+
+			to {
+				filter: grayscale(0%) blur(50px);
+				-webkit-filter: grayscale(0%) blur(50px);
+				background-size: 200%;
+			}
+		}
+
+		.gray-back {
+			animation-name: gray-back;
+			animation-duration: 2s;
+			background-size: 100%;
+			filter: grayscale(100%) blur(50px);
+			-webkit-filter: grayscale(100%) blur(50px);
+		}
+
+		@keyframes gray-back {
+			from {
+				filter: grayscale(0%) blur(50px);
+				-webkit-filter: grayscale(0%) blur(50px);
+				background-size: 200%;
+			}
+
+			to {
+				filter: grayscale(100%) blur(50px);
+				-webkit-filter: grayscale(100%) blur(50px);
+				background-size: 100%;
+			}
+		}
+	</style>
+</body>
+
+</html>

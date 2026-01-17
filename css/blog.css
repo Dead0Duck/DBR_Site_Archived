@@ -1,0 +1,90 @@
+#post-text blockquote {
+	margin: 0;
+	border-left: 6px solid #00000020;
+	padding-left: 1rem;
+}
+
+#post-text :not(pre) code {
+	color: #000;
+	border-radius: 0.2rem;
+	padding: 0.2em;
+	overflow-x: auto;
+	background: #00000030;
+}
+
+#post-text img:not(.img-ava) {
+	max-width: 100%;
+}
+
+.emoji {
+	height: 1.5em;
+	width: auto;
+}
+
+.hljs {
+	color: black;
+}
+
+[data-theme="dark"] #post-text :not(pre) code {
+	color: #fff;
+	background: #ffffff30;
+}
+
+[data-theme="dark"] .hljs {
+	color: white;
+	border: 1px solid #3a3a3a60;
+	background: #3a3a3a50;
+}
+
+[data-theme="dark"] hr {
+	background-color: #fff;
+}
+
+[data-theme="dark"] #post-text blockquote {
+	border-left: 6px solid #ffffff20;
+}
+
+.embed-responsive {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.embed-responsive::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.embed-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+[data-theme="dark"] spoiler {
+	background: #ffffff30;
+}
+
+spoiler {
+	background-color: gray;
+    color: transparent;
+    user-select: none;
+    transition: all 0.15s ease-in-out;
+    border-radius: .2rem;
+	padding: 0.2em;
+
+	font-size: 0.875em;
+	word-wrap: break-word;
+	font-family: var(--bs-font-monospace);
+	direction: ltr /* rtl:ignore */;
+    unicode-bidi: bidi-override;
+	background: #00000030;
+}
+
+spoiler:hover {
+    background-color: inherit;
+    color: inherit;
+}

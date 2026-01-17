@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /games
+Allow: /wiki
+Allow: /$
+Allow: /blog
+Allow: /forms
+
+Allow: /robots.txt
+Allow: /favicon.ico
+Allow: /android-chrome-192x192.png
+Allow: /android-chrome-256x256.png
+Allow: /apple-touch-icon.png
+Allow: /browserconfig.xml
+Allow: /favicon-16x16.png
+Allow: /favicon-32x32.png
+Allow: /mstile-150x150.png
+Allow: /safari-pinned-tab.svg
+Allow: /site.webmanifest
+Allow: /sitemap.xml
+Allow: /sitemap_wiki.xml
+Allow: /sitemap_wiki_chars.xml
+
+Disallow: /
+Host: https://dbr.su
+Sitemap: https://dbr.su/sitemap.xml
+Sitemap: https://dbr.su/sitemap_wiki.xml
+Sitemap: https://dbr.su/sitemap_wiki_chars.xml

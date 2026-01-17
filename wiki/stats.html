@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Wiki: Характеристики персонажей</title>
+	<meta content="Wiki: Характеристики персонажей" property="og:title" />
+    <meta content="Теперь вы можете проверить, в чем силен интересный вам персонаж, ведь здесь собраны вся информация о всех персонажах." name="description" />
+    <meta content="Теперь вы можете проверить, в чем силен интересный вам персонаж, ведь здесь собраны вся информация о всех персонажах." property="og:description" />
+	
+	
+
+<meta content="Despair Beyond Repair" property="og:site_name" />
+<meta content="/android-icon-192x192.png?v=2" property="og:image" />
+<meta content="#8800ff" name="theme-color" />
+<link rel="stylesheet" href="/css/white.css">
+<link rel="stylesheet" href="/css/dark.css">
+<link rel="stylesheet" href="/css/themes.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
+<link rel="manifest" href="/site.webmanifest?v=2">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=2" color="#212121">
+<link rel="shortcut icon" href="/favicon.ico?v=2">
+<meta name="apple-mobile-web-app-title" content="Despair Beyond Repair">
+<meta name="application-name" content="Despair Beyond Repair">
+<meta name="msapplication-TileColor" content="#00ffff">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/bootstrap-icons/bootstrap-icons.css">
+
+<script src="/js/libs/bootstrap.js"></script>
+	
+	<script src="/js/libs/jquery.js"></script>
+</head>
+
+<body>
+	<script src="/js/initdark.js"></script>
+	<script src="/js/dark.js"></script>
+	<script src="/js/background.js"></script>
+		
+	<div id="top" class="fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-dark">
+	<div class="container-xxl d-flex align-items-md-center">
+		<a class="navbar-brand" href="#"><img draggable="false" src="/images/logo_login.svg" height="40px" width="79px"></a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+				<li class="nav-item">
+					<a class="nav-link " aria-current="page" href="/games">Список игр</a>
+					<li class="nav-item dropdown">
+					  <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Wiki
+					  </a>
+					  <ul style="font-size: inherit;" class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li><a class="dropdown-item " href="/wiki">Главная</a></li>
+						<li><a class="dropdown-item " href="/wiki/faq" title="Часто задаваемые вопросы">ЧаВо</a></li>
+						<li><a class="dropdown-item " href="/wiki/controls">Управление</a></li>
+						<li><a class="dropdown-item " href="/wiki/chat">Чат-команды</a></li>
+						<li><a class="dropdown-item " href="/wiki/chars">Памятки отыгровки персонажей</a></li>
+						<li><a class="dropdown-item active" href="/wiki/stats">Характеристики персонажей</a></li>
+					  </ul>
+					</li>
+					<li><a class="nav-link " aria-current="page" href="/forms">Анкеты</a></li>
+					<li><a class="nav-link aria-current="page" href="https://dead0duck.ru">Вернуться на основной сайт</a></li>
+				</li>
+			</ul>
+			
+				
+					<div class="d-flex justify-content-center"><div class="dropdown">
+						<button style="font-size: inherit;" class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+							<img src="/images/dev-pic.png" class="profile-pic-navbar"> MonoDuck
+						</button>
+						<ul style="font-size: inherit;" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+							<li><a class="dropdown-item" href="/me"><i class="bi bi-person-circle"></i> Мой профиль</a></li>
+							<li><a class="dropdown-item disabled" href="/me/stats" disabled><i class="bi bi-bar-chart-fill"></i> Статистика</a></li>
+							
+							<li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#settings"><i class="bi bi-gear-fill"></i> Настройки</a></li>
+							
+						</ul>
+					</div></div>
+				
+			
+		</div>
+	</div>
+</nav>
+</div>
+
+
+	<div class="modal fade" id="settings" tabindex="-1" aria-labelledby="settings" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Настройки</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<h3>Выбрать фон</h3>
+					<div class="row">
+						<div class="col-4">
+							<img src="/images/dbr-main.webp" type="button" onclick="changebg(1)" id="thumb-1" class="img-thumbnail">
+							<p class="text-center">Neon Bubbles</p>
+						</div>
+						
+						<div class="col-4">
+							<img src="/images/aqua.webp" type="button" onclick="changebg(2)" id="thumb-2" class="img-thumbnail">
+							<p class="text-center">Aqua Dimension</p>
+						</div>
+						
+						<div class="col-4">
+							<img src="/images/hope.webp" type="button" onclick="changebg(3)"id="thumb-3" class="img-thumbnail">
+							<p class="text-center">Hope's Peak Academy</p>
+						</div>
+					</div>
+					<div class="form-check form-switch pull-right">
+						<input class="form-check-input" type="checkbox" id="darkMode">
+						<label id="darkModeLabel" for="darkMode">Light</label>
+					</div>
+
+					<div class="form-floating mb-3 mt-3">
+						<input autocomplete="off" class="form-control" id="font" value="Comfortaa" onchange="change_font(document.getElementById('font').value)">
+						<label for="font">Используемый шрифт</label>
+						<a class="text-muted pt-2" href="https://fonts.google.com/?subset=cyrillic" target="_blank"><i class="bi bi-info-circle-fill"></i> Можно поставить шрифт из Google Fonts.  <i style="text-decoration: none;" class="bi bi-box-arrow-up-right"></i></a>
+					</div>
+					<div class="alert alert-danger d-flex align-items-center" role="alert">
+						<i class="bi flex-shrink-0 me-2 fs-4 bi-exclamation-triangle-fill"></i>
+						<div style="font-family: Comfortaa">
+						Использование сторонних шрифтов не гарантирует приемлемый вид сайта. Чтобы вернуть стандартный — сотрите поле.
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<script src="/js/libs/autocomplete.js"></script>
+	<script src="/js/browser.js"></script>
+	<script lang="javascript">
+		if(localStorage.getItem('font') !== null) {
+	document.getElementById('font').value = font;}
+
+	const ac = new Autocomplete(document.getElementById("font"), {
+		data: data,
+		maximumItems: 5,
+		onSelectItem: ({label, value}) => {
+			change_font(label);
+		showValue: true;
+		}
+	})
+	</script>
+
+	<script src="/js/libs/webfont.js"></script>
+
+	
+	<script>
+		function DBR_InitPreProfiles() {}
+	</script>
+	
+
+
+<nav class="sticky-top" style="margin-bottom: 4.1rem !important;">
+</nav>
+	
+	<div class="container pt-3" style="display: block;">
+		<div class="card my-4">
+				<div class="p-5 title-wiki">
+					<span class="fs-1 text-title-wiki">Характеристики персонажей <i class="bi bi-info-circle-fill"></i></span>
+				</div>
+				<div class="m-3" style="max-width:40%">
+					<label for="customRange3" class="form-label">Размер шрифта (<span id="fontsize">0.7</span>)</label><input type="range" class="form-range" min="0.7" max="1.2" step="0.1" id="range" oninput="fontsizeChange()">
+				</div>
+				<div class="m-3">
+					<label>Вы можете сортировать таблицу, нажимая на заголовки. Стрелка у заголовка покажет, как сейчас отсортирована таблица.</label>
+					<label>На компьютерах удобно нажать колёсико мышки внутри таблицы для её прокрутки.</label>
+				</div>
+			<div class="card-body stickyTable stickyTableBorder">
+				<table id="table" class="table table-theme table-sm table-striped" style="margin-bottom: 0;">
+					<thead>
+						<tr>
+							<th scope="col">Персонаж</th>
+							<th scope="col">Выносливость</th>
+							<th scope="col">Скорость</th>
+							<th scope="col">Сила</th>
+							<th scope="col">Внимательность</br>(от 0 до 5)</th>
+							<th scope="col">Здоровье</th>
+							<th scope="col">Скорость голода</th>
+							<th scope="col">Скорость жажды</th>
+							<th scope="col">Скорость засыпания</th>
+							<th scope="col">Особенности</th>
+						</tr>
+					</thead>
+					<tbody>
+						
+							<tr id="akane_row">
+								<th scope="row"><span id="akane">Акане Овари</span></th>
+								<td data-sort="2">200%</td>
+								<td data-sort="1.5">150%</td>
+								<td data-sort="1.8">180%</td>
+								<td data-sort="0">0</td>
+								<td data-sort="150">150</td>
+								<td data-sort="1.6">160%</td>
+								<td data-sort="1.4">140%</td>
+								<td data-sort="0.8">80%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="angie_row">
+								<th scope="row"><span id="angie">Анджи Ёнага</span></th>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="3">3</td>
+								<td data-sort="90">90</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="0.9">90%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="aoi_row">
+								<th scope="row"><span id="aoi">Аой Асахина</span></th>
+								<td data-sort="1.8">180%</td>
+								<td data-sort="1.2">120%</td>
+								<td data-sort="1.3">130%</td>
+								<td data-sort="2">2</td>
+								<td data-sort="125">125</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1.1">110%</td>
+								<td>Быстрое плавание</td>
+							</tr>
+						
+							<tr id="byakuya_row">
+								<th scope="row"><span id="byakuya">Бьякуя Тогами</span></th>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="1.2">120%</td>
+								<td data-sort="1.2">120%</td>
+								<td data-sort="4">4</td>
+								<td data-sort="110">110</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="0.8">80%</td>
+								<td>Игра на пианино</td>
+							</tr>
+						
+							<tr id="imposter_row">
+								<th scope="row"><span id="imposter">Бьякуя Тогами (Самозванец)</span></th>
+								<td data-sort="1.2">120%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="3">3</td>
+								<td data-sort="150">150</td>
+								<td data-sort="1.5">150%</td>
+								<td data-sort="1.5">150%</td>
+								<td data-sort="0.8">80%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="gundham_row">
+								<th scope="row"><span id="gundham">Гандам Танака</span></th>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1.2">120%</td>
+								<td data-sort="3">3</td>
+								<td data-sort="100">100</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.9">90%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="jack_row">
+								<th scope="row"><span id="jack">Геноцид Джек</span></th>
+								<td data-sort="1.6">160%</td>
+								<td data-sort="1.6">160%</td>
+								<td data-sort="1.2">120%</td>
+								<td data-sort="1">1</td>
+								<td data-sort="100">100</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="0.7">70%</td>
+								<td>Вскрытие</td>
+							</tr>
+						
+							<tr id="gonta_row">
+								<th scope="row"><span id="gonta">Гонта Гокухара</span></th>
+								<td data-sort="1.8">180%</td>
+								<td data-sort="1.55">155%</td>
+								<td data-sort="2">200%</td>
+								<td data-sort="4">4</td>
+								<td data-sort="280">280</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.9">90%</td>
+								<td>Не может готовить</td>
+							</tr>
+						
+							<tr id="jataro_row">
+								<th scope="row"><span id="jataro">Джатаро Кемури</span></th>
+								<td data-sort="0.6">60%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="1">1</td>
+								<td data-sort="90">90</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1.1">110%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="junko_row">
+								<th scope="row"><span id="junko">Джунко Эношима</span></th>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="5">5</td>
+								<td data-sort="100">100</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.9">90%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="junko_fake_row">
+								<th scope="row"><span id="junko_fake">Джунко Эношима (Мукуро)</span></th>
+								<td data-sort="2">200%</td>
+								<td data-sort="1.5">150%</td>
+								<td data-sort="1.5">150%</td>
+								<td data-sort="3">3</td>
+								<td data-sort="150">150</td>
+								<td data-sort="0.6">60%</td>
+								<td data-sort="0.6">60%</td>
+								<td data-sort="0.6">60%</td>
+								<td>Вскрытие, точная стрельба</td>
+							</tr>
+						
+							<tr id="ibuki_row">
+								<th scope="row"><span id="ibuki">Ибуки Миода</span></th>
+								<td data-sort="1.6">160%</td>
+								<td data-sort="1.3">130%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="1">1</td>
+								<td data-sort="90">90</td>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="1.2">120%</td>
+								<td>Танцует</td>
+							</tr>
+						
+							<tr id="kazuichi_row">
+								<th scope="row"><span id="kazuichi">Казуичи Сода</span></th>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1.4">140%</td>
+								<td data-sort="2">2</td>
+								<td data-sort="100">100</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.9">90%</td>
+								<td>Вскрытие роботов</td>
+							</tr>
+						
+							<tr id="kaito_row">
+								<th scope="row"><span id="kaito">Кайто Момота</span></th>
+								<td data-sort="1.2">120%</td>
+								<td data-sort="1.3">130%</td>
+								<td data-sort="1.4">140%</td>
+								<td data-sort="3">3</td>
+								<td data-sort="150">150</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.8">80%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="kaede_row">
+								<th scope="row"><span id="kaede">Каэде Акамацу</span></th>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="3">3</td>
+								<td data-sort="100">100</td>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td>Игра на пианино</td>
+							</tr>
+						
+							<tr id="kyoko_row">
+								<th scope="row"><span id="kyoko">Кёко Киригири</span></th>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="5">5</td>
+								<td data-sort="100">100</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.5">50%</td>
+								<td>Вскрытие</td>
+							</tr>
+						
+							<tr id="kiyotaka_row">
+								<th scope="row"><span id="kiyotaka">Киётака Ишимару</span></th>
+								<td data-sort="1.3">130%</td>
+								<td data-sort="1.2">120%</td>
+								<td data-sort="1.3">130%</td>
+								<td data-sort="2">2</td>
+								<td data-sort="110">110</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="1">100%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="kirumi_row">
+								<th scope="row"><span id="kirumi">Кируми Тоджо</span></th>
+								<td data-sort="1.6">160%</td>
+								<td data-sort="1.3">130%</td>
+								<td data-sort="1.5">150%</td>
+								<td data-sort="4">4</td>
+								<td data-sort="125">125</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="0.8">80%</td>
+								<td>Хорошо готовит</td>
+							</tr>
+						
+							<tr id="kokichi_row">
+								<th scope="row"><span id="kokichi">Кокичи Ома</span></th>
+								<td data-sort="1.7">170%</td>
+								<td data-sort="1.5">150%</td>
+								<td data-sort="0.7">70%</td>
+								<td data-sort="4">4</td>
+								<td data-sort="90">90</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="0.7">70%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="komaru_row">
+								<th scope="row"><span id="komaru">Комару Наэги</span></th>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="2">2</td>
+								<td data-sort="100">100</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="korekiyo_row">
+								<th scope="row"><span id="korekiyo">Корекиё Шингуджи</span></th>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1.2">120%</td>
+								<td data-sort="4">4</td>
+								<td data-sort="110">110</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="0.8">80%</td>
+								<td>Вскрытие</td>
+							</tr>
+						
+							<tr id="kotoko_row">
+								<th scope="row"><span id="kotoko">Котоко Утсуги</span></th>
+								<td data-sort="0.6">60%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.6">60%</td>
+								<td data-sort="1">1</td>
+								<td data-sort="60">60</td>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="1.1">110%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="leon_row">
+								<th scope="row"><span id="leon">Леон Кувата</span></th>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="1.2">120%</td>
+								<td data-sort="1.4">140%</td>
+								<td data-sort="1">1</td>
+								<td data-sort="115">115</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="maki_row">
+								<th scope="row"><span id="maki">Маки Харукава</span></th>
+								<td data-sort="2">200%</td>
+								<td data-sort="1.65">165%</td>
+								<td data-sort="1.3">130%</td>
+								<td data-sort="4">4</td>
+								<td data-sort="120">120</td>
+								<td data-sort="0.6">60%</td>
+								<td data-sort="0.6">60%</td>
+								<td data-sort="0.6">60%</td>
+								<td>Вскрытие, точная стрельба</td>
+							</tr>
+						
+							<tr id="makoto_row">
+								<th scope="row"><span id="makoto">Макото Наэги</span></th>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="4">4</td>
+								<td data-sort="100">100</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td>Удача</td>
+							</tr>
+						
+							<tr id="masaru_row">
+								<th scope="row"><span id="masaru">Масару Даймон</span></th>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="1.2">120%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0">0</td>
+								<td data-sort="100">100</td>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="1.1">110%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="mahiru_row">
+								<th scope="row"><span id="mahiru">Махиру Койзуми</span></th>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="2">2</td>
+								<td data-sort="100">100</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="mikan_row">
+								<th scope="row"><span id="mikan">Микан Цумики</span></th>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="4">4</td>
+								<td data-sort="100">100</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="0.7">70%</td>
+								<td>Вскрытие</td>
+							</tr>
+						
+							<tr id="miu_row">
+								<th scope="row"><span id="miu">Миу Ирума</span></th>
+								<td data-sort="0.7">70%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="2">2</td>
+								<td data-sort="110">110</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="0.7">70%</td>
+								<td>Вскрытие роботов</td>
+							</tr>
+						
+							<tr id="monaca_row">
+								<th scope="row"><span id="monaca">Монака Това</span></th>
+								<td data-sort="0.6">60%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.6">60%</td>
+								<td data-sort="3">3</td>
+								<td data-sort="60">60</td>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="0.9">90%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="mondo_row">
+								<th scope="row"><span id="mondo">Мондо Овада</span></th>
+								<td data-sort="1.6">160%</td>
+								<td data-sort="1.3">130%</td>
+								<td data-sort="1.8">180%</td>
+								<td data-sort="1">1</td>
+								<td data-sort="175">175</td>
+								<td data-sort="1.2">120%</td>
+								<td data-sort="1.2">120%</td>
+								<td data-sort="0.9">90%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="mukuro_row">
+								<th scope="row"><span id="mukuro">Мукуро Икусаба</span></th>
+								<td data-sort="2">200%</td>
+								<td data-sort="1.5">150%</td>
+								<td data-sort="1.5">150%</td>
+								<td data-sort="3">3</td>
+								<td data-sort="150">150</td>
+								<td data-sort="0.6">60%</td>
+								<td data-sort="0.6">60%</td>
+								<td data-sort="0.6">60%</td>
+								<td>Вскрытие, точная стрельба</td>
+							</tr>
+						
+							<tr id="nagisa_row">
+								<th scope="row"><span id="nagisa">Нагиса Шингетсу</span></th>
+								<td data-sort="0.6">60%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="2">2</td>
+								<td data-sort="90">90</td>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="0.8">80%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="nagito_row">
+								<th scope="row"><span id="nagito">Нагито Комаэда</span></th>
+								<td data-sort="0.6">60%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="4">4</td>
+								<td data-sort="90">90</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="1">100%</td>
+								<td>Удача, не может готовить</td>
+							</tr>
+						
+							<tr id="nekomaru_row">
+								<th scope="row"><span id="nekomaru">Некомару Нидай</span></th>
+								<td data-sort="1.8">180%</td>
+								<td data-sort="1.5">150%</td>
+								<td data-sort="1.8">180%</td>
+								<td data-sort="1">1</td>
+								<td data-sort="200">200</td>
+								<td data-sort="1.2">120%</td>
+								<td data-sort="1.2">120%</td>
+								<td data-sort="1.1">110%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="peko_row">
+								<th scope="row"><span id="peko">Пеко Пекояма</span></th>
+								<td data-sort="1.4">140%</td>
+								<td data-sort="1.3">130%</td>
+								<td data-sort="1.5">150%</td>
+								<td data-sort="3">3</td>
+								<td data-sort="125">125</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="0.8">80%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="rantaro_row">
+								<th scope="row"><span id="rantaro">Рантаро Амами</span></th>
+								<td data-sort="1.4">140%</td>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="3">3</td>
+								<td data-sort="110">110</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="0.9">90%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="ryoma_row">
+								<th scope="row"><span id="ryoma">Рёма Хоши</span></th>
+								<td data-sort="1.8">180%</td>
+								<td data-sort="1.65">165%</td>
+								<td data-sort="1.2">120%</td>
+								<td data-sort="4">4</td>
+								<td data-sort="105">105</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="0.8">80%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="sakura_row">
+								<th scope="row"><span id="sakura">Сакура Огами</span></th>
+								<td data-sort="2">200%</td>
+								<td data-sort="1.3">130%</td>
+								<td data-sort="2">200%</td>
+								<td data-sort="2">2</td>
+								<td data-sort="250">250</td>
+								<td data-sort="1.2">120%</td>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="1.1">110%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="sayaka_row">
+								<th scope="row"><span id="sayaka">Саяка Майзоно</span></th>
+								<td data-sort="1.4">140%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="2">2</td>
+								<td data-sort="90">90</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="0.6">60%</td>
+								<td>Танцует</td>
+							</tr>
+						
+							<tr id="celeste_row">
+								<th scope="row"><span id="celeste">Селестия Люденберг</span></th>
+								<td data-sort="0.7">70%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="3">3</td>
+								<td data-sort="90">90</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="1">100%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="sonia_row">
+								<th scope="row"><span id="sonia">Сония Невермайнд</span></th>
+								<td data-sort="1.2">120%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="2">2</td>
+								<td data-sort="100">100</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="0.8">80%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="tenko_row">
+								<th scope="row"><span id="tenko">Тенко Чабашира</span></th>
+								<td data-sort="1.4">140%</td>
+								<td data-sort="1.2">120%</td>
+								<td data-sort="1.4">140%</td>
+								<td data-sort="1">1</td>
+								<td data-sort="130">130</td>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="1.1">110%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="teru_row">
+								<th scope="row"><span id="teru">Терутеру Ханамура</span></th>
+								<td data-sort="0.6">60%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="1">1</td>
+								<td data-sort="100">100</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td>Хорошо готовит</td>
+							</tr>
+						
+							<tr id="toko_row">
+								<th scope="row"><span id="toko">Токо Фукава</span></th>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="2">2</td>
+								<td data-sort="100">100</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="0.8">80%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="tsumugi_row">
+								<th scope="row"><span id="tsumugi">Тсумуги Широганэ</span></th>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="2">2</td>
+								<td data-sort="100">100</td>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.9">90%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="fuyhiko_row">
+								<th scope="row"><span id="fuyhiko">Фуюхико Кузурю</span></th>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="3">3</td>
+								<td data-sort="100">100</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="0.8">80%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="hajime_row">
+								<th scope="row"><span id="hajime">Хаджиме Хината</span></th>
+								<td data-sort="1.2">120%</td>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="1.2">120%</td>
+								<td data-sort="3">3</td>
+								<td data-sort="100">100</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="hiyoko_row">
+								<th scope="row"><span id="hiyoko">Хиёко Сайонджи</span></th>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.6">60%</td>
+								<td data-sort="1">1</td>
+								<td data-sort="75">75</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="0.8">80%</td>
+								<td>Танцует</td>
+							</tr>
+						
+							<tr id="himiko_row">
+								<th scope="row"><span id="himiko">Химико Юмено</span></th>
+								<td data-sort="0.6">60%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.6">60%</td>
+								<td data-sort="1">1</td>
+								<td data-sort="75">75</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="1.3">130%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="hifumi_row">
+								<th scope="row"><span id="hifumi">Хифуми Ямада</span></th>
+								<td data-sort="0.6">60%</td>
+								<td data-sort="1.2">120%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="2">2</td>
+								<td data-sort="135">135</td>
+								<td data-sort="1.4">140%</td>
+								<td data-sort="1.2">120%</td>
+								<td data-sort="0.6">60%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="chiaki_row">
+								<th scope="row"><span id="chiaki">Чиаки Нанами</span></th>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="3">3</td>
+								<td data-sort="100">100</td>
+								<td data-sort="0.7">70%</td>
+								<td data-sort="0.7">70%</td>
+								<td data-sort="1.3">130%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="chihiro_row">
+								<th scope="row"><span id="chihiro">Чихиро Фуджисаки</span></th>
+								<td data-sort="0.6">60%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.6">60%</td>
+								<td data-sort="2">2</td>
+								<td data-sort="75">75</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="0.8">80%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="shuichi_row">
+								<th scope="row"><span id="shuichi">Шуичи Сайхара</span></th>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.8">80%</td>
+								<td data-sort="5">5</td>
+								<td data-sort="100">100</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0.9">90%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="yuta_row">
+								<th scope="row"><span id="yuta">Юта Асахина</span></th>
+								<td data-sort="1.4">140%</td>
+								<td data-sort="1.3">130%</td>
+								<td data-sort="1.1">110%</td>
+								<td data-sort="1">1</td>
+								<td data-sort="110">110</td>
+								<td data-sort="0.9">90%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1.1">110%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="yasuhiro_row">
+								<th scope="row"><span id="yasuhiro">Ясухиро Хагакурэ</span></th>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="0">0</td>
+								<td data-sort="100">100</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td>-</td>
+							</tr>
+						
+							<tr id="k1b0_row">
+								<th scope="row"><span id="k1b0">K1-B0</span></th>
+								<td data-sort="Infinity">∞</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="1">100%</td>
+								<td data-sort="3">3</td>
+								<td data-sort="200">200</td>
+								<td data-sort="false">-</td>
+								<td data-sort="false">-</td>
+								<td data-sort="1">100%</td>
+								<td>Робот</td>
+							</tr>
+						
+					</tbody>
+				</table>
+			</div>
+			<div class="m-3">
+				<p>Персонажи с силой <b>выше</b> 150% могут выбивать двери руками.</p>
+				<p>Удача может спасти вас от русской рулетки например.</p>
+			</div>
+	</div></div>
+	
+	<script>
+		function newHash() {
+			$( ".tb-selected" ).removeClass( "tb-selected" )		
+			$( window.location.hash+"_row" ).addClass("tb-selected")
+			$( window.location.hash ).addClass("tb-selected")
+		}
+		
+		window.onhashchange = newHash
+		newHash();
+	</script>
+
+	<script>
+		var getCellValue = (tr, idx) => { return tr.children[idx].dataset.sort || tr.children[idx].innerText || tr.children[idx].textContent; }
+
+		var comparer = function(idx, asc) { return function(a, b) { return function(v1, v2) {
+				return v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2, 'en');
+			}(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+		}};
+
+		let j = $('thead > tr > th')
+		j.each(id => {
+			let th = j[ id ]
+			th.name = th.innerHTML
+			th.addEventListener('click', (() => {
+				j.each(ii => {
+					let thh = j[ ii ]
+					thh.innerHTML = thh.name
+				})
+				const table = th.closest('table');
+				const tbody = table.querySelector('tbody');
+				Array.from(tbody.querySelectorAll('tr'))
+					.sort(comparer(Array.from(th.parentNode.children).indexOf(th), th.asc = !th.asc))
+					.forEach(tr => tbody.appendChild(tr) );
+				
+				th.innerHTML = th.name + (th.asc ? ' <i class="bi bi-arrow-down-circle"></i>': ' <i class="bi bi-arrow-up-circle"></i>')
+			}))
+		});
+
+		j[ 0 ].innerHTML = j[ 0 ].name + ' <i class="bi bi-arrow-down-circle"></i>'
+		j[ 0 ].asc = true
+	</script>
+
+	<script>
+		fontsize = localStorage.getItem('fontsize') || 1.0;
+		document.getElementById('table').style.fontSize = fontsize + 'rem';
+		document.getElementById('fontsize').innerHTML = fontsize;
+		document.getElementById('range').value = fontsize;
+		function fontsizeChange() {
+			let fontsize = document.getElementById('range').value;
+			document.getElementById('fontsize').innerHTML = fontsize;
+			localStorage.setItem('fontsize', fontsize);
+			document.getElementById('table').style.fontSize = fontsize + 'rem';
+		}
+	</script>
+
+	<style>
+		p {
+			margin: 0;
+			position: sticky;
+			left: 0;
+		}
+
+		thead {
+			cursor: pointer;
+		}
+	</style>
+	</body>
+</html>
